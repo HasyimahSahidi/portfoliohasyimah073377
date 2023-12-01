@@ -1,0 +1,76 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 27 Nov 2023, 1:19:46 PM
+    Author     : Acer
+*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.aboutme .row{
+    width: 100%;
+    padding: 50px 8%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.aboutme .row .images{
+    grid-area: imageSect;
+    border: 1px solid black;
+}
+
+.aboutme .row .content{
+    display: grid;
+    grid-template-column: 2fr 5fr;
+    grid-gap: 10px;
+    grid-area: infoSect;
+    
+    
+}
+
+
+
+.aboutme .row .images::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    outline: 3px solid #333;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+}
+
+.aboutme .row .content .personalInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 20px;
+    margin-top: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.aboutme .row .content .personalInfo div{
+    display: grid;
+    
+}
+
+.aboutme .row .content .personalInfo div span{
+    color: #800080;
+    letter-spacing: 1px
+}
+
+@media(max-width: 668px){
+    .aboutme .row .content .personalInfo{
+        grid-template-columns: 1fr
+    }
+}
+

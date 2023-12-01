@@ -1,0 +1,25 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 28 Nov 2023, 11:38:57 PM
+    Author     : Acer
+*/
+body{
+    min-height:100vh;
+    background:url('rama.jpg')no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+}
+
+h1{
+    color: #333;
+    font-size: 30px;
+    font-family: helvetica;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+}
